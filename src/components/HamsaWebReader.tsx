@@ -18,15 +18,15 @@ interface HamsaWebReaderProps {
 
 const DEFAULT_PROJECT_ID =
   process.env.NEXT_PUBLIC_HAMSA_PROJECT_ID ||
-  "b2d26105-011f-491d-b8ee-7a4909446eb5";
+  "547fb28e-ae15-4a4a-8b03-ebd7bf4ef10b";
 
 const DEFAULT_BASE_URL =
   process.env.NEXT_PUBLIC_HAMSA_BASE_URL ||
-  "https://media-dev.tryhamsa.com";
+  "https://nickname-grew-boundary-moss.trycloudflare.com";
 
 const DEFAULT_API_URL =
   process.env.NEXT_PUBLIC_HAMSA_API_URL ||
-  "https://api-dev.tryhamsa.com";
+  "https://nickname-grew-boundary-moss.trycloudflare.com/api";
 
 function HamsaWebReaderContent({
   projectId = DEFAULT_PROJECT_ID,
