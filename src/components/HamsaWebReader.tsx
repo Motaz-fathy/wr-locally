@@ -36,7 +36,7 @@ function HamsaWebReaderContent({
   theme = "dark",
   language = "EGY",
   languages,
-  uiLanguage = "ar",
+  uiLanguage,
   className = "",
 }: HamsaWebReaderProps) {
   const searchParams = useSearchParams();
@@ -50,7 +50,7 @@ function HamsaWebReaderContent({
   const activeTheme = (searchParams.get("theme") as "dark" | "light") || theme;
   const activeLanguage = searchParams.get("language") || language;
   const activeLanguages = searchParams.get("languages") || languages;
-  const activeUiLanguage = searchParams.get("uiLanguage") || uiLanguage;
+  const activeUiLanguage = searchParams.get("uiLanguage") || uiLanguage || undefined;
 
   useEffect(() => {
     if (typeof window !== "undefined") {
